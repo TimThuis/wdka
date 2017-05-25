@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+a {
+  color: white;
+  background: #00B4BE;
+  padding: 4px 8px;
+  margin: 0 4px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+img {
+  border: 1px solid #D5B439;
+  height: 200px;
+}
+
+video {
+  border: 1px solid #DB5E6E;
+}
