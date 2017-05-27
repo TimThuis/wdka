@@ -2,6 +2,7 @@
   "name": "digital-initiatives",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "http://timthuis.github.io/wdka",
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
