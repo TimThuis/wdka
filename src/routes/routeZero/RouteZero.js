@@ -6,7 +6,7 @@ class RouteZero extends Component {
     return (
       <div>
         <h2>Route 0</h2>
-        <div>
+        <div className="links">
           <Link to="/route-0/step-1"> step 1 </Link>
           <Link to="/route-0/step-2"> step 2 </Link>
           <Link to="/route-0/step-3"> step 3 </Link>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Route } from 'react-router';
+import { Router, Route, Redirect } from 'react-router';
 
 import App from './App';
 
@@ -52,6 +52,7 @@ const Routes = (props) => (
         <Route path="/route-b/step-5" component={RBV4} />
       </Route>
     </Route>
+    <Redirect from="/start" to="/route-0/step-1" />
   </Router>
 );
 

@@ -9,8 +9,10 @@ class RBI1 extends Component {
       <div>
         <h3>Route B image 1</h3>
         <img src={Image} alt=""/>
-        <Link to="/route-b/step-5" >cancel</Link>
-        <Link to="/route-a/step-5" >post</Link>
+        <div className="container-buttons-image">
+          <Link to="/route-b/step-5" >cancel</Link>
+          <Link to="/route-a/step-5" >post</Link>
+        </div>
         <p>tweede instagram post</p>
       </div>
       );

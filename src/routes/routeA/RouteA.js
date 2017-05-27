@@ -6,7 +6,7 @@ class RouteA extends Component {
     return (
       <div>
         <h2>Route A</h2>
-        <div>
+        <div className="links">
           <Link to="/route-a/step-1"> step 1 </Link>
           <Link to="/route-a/step-2"> step 2 </Link>
           <Link to="/route-a/step-3"> step 3 </Link>

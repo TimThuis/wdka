@@ -8,8 +8,12 @@ class R0I2 extends Component {
       <div>
         <h3>Route 0 image 2</h3>
         <img src={Image} alt=""/>
-        <Link to="/route-0/step-3" >yes</Link>
-        <Link to="/route-0/step-3" >no</Link>
+
+        <div className="container-buttons-image">
+          <Link to="/route-0/step-3" >yes</Link>
+          <Link to="/route-0/step-3" >no</Link>
+        </div>
+        
         <p>spel uitleg & instagram login</p>
       </div>
       );

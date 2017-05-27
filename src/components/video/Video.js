@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Video.css';
+import Gif from './loading-gif.gif';
 
 class Video extends React.Component {
 
@@ -9,16 +10,18 @@ class Video extends React.Component {
   }
 
   render() {
-    return (
 
+    return (
       <video
       onEnded={this.props.startAnimation}
       ref='video'
       src={this.props.location}
-      type="video/mp4">
-      </video>
-
+      type="video/mp4"
+      preload="auto"
+      poster={Gif}
+      ></video>
       );
+
   }
 }
 

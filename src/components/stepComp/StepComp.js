@@ -22,7 +22,7 @@ class StepComp extends React.Component {
     return (
       <div>
         <Video location={this.props.video} startAnimation={this.animation}/>
-        <div ref="buttons" className="container-buttons">
+        <div ref="buttons" className="container-buttons-video">
           {this.props.children}
         </div>
       </div>

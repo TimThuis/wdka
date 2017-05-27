@@ -8,7 +8,9 @@ class R0I1 extends Component {
       <div>
         <h3>Route 0 image 1</h3>
           <img src={Image} alt=""/>
-          <Link to="/route-0/step-2" >next</Link>
+          <div className="container-buttons-image">
+            <Link to="/route-0/step-2" >next</Link>
+          </div>
           <p>Titelpagina</p>
       </div>
       );

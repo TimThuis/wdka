@@ -6,7 +6,7 @@ class RouteB extends Component {
     return (
       <div>
         <h2>Route B</h2>
-        <div>
+        <div className="links">
           <Link to="/route-b/step-1"> step 1 </Link>
           <Link to="/route-b/step-2"> step 2 </Link>
           <Link to="/route-b/step-3"> step 3 </Link>
