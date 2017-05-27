@@ -20,11 +20,8 @@ img, video, .container-buttons-video, .container-buttons-image {
   right: 0;
   height: 100vh;
 }
-/*img { border: 3px solid #D5B439; }*/
-/*video { border: 3px solid #DB5E6E; }*/
 
 .container-buttons-video, .container-buttons-image {
-  width: calc(100vh * 0.55);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,6 +30,19 @@ img, video, .container-buttons-video, .container-buttons-image {
 
 .container-buttons-video {
   opacity: 0;
+}
+
+.container-buttons-image {
+  animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 650px) {

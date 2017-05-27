@@ -14,6 +14,7 @@ class StepComp extends React.Component {
   animation() {
     TweenMax.to(element, 2, {
       opacity: 1,
+      delay: 1
     })
   }
 

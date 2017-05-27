@@ -8,7 +8,7 @@ class Video extends React.Component {
 
   componentDidMount() {
     video = this.refs.video;
-    this.refs.video.play();
+    video.play();
   }
 
   videoClose() {
