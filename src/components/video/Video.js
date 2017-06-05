@@ -12,7 +12,7 @@ class Video extends React.Component {
     video = this.refs.video;
     audio = this.refs.audio;
     video.play();
-    video.playbackRate = 10;
+  // video.playbackRate = 10;
   }
 
   videoClose() {
