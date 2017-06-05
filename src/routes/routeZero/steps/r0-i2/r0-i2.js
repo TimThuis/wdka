@@ -1,20 +1,25 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import Image from '../../../../images/2.png';
+
+import Background from './background.png';
+import ButtonNee from './button-nee.png';
+import ButtonJa from './button-ja.png';
 
 class R0I2 extends Component {
   render() {
     return (
-      <div>
-        <h3>Route 0 image 2</h3>
-        <img src={Image} alt=""/>
+      <div className="container">
+        <img className="background" src={Background} alt=""/>
 
         <div className="container-buttons-image">
-          <Link to="/route-0/step-3" >yes</Link>
-          <Link to="/route-0/step-3" >no</Link>
+          <Link to="/route-0/step-3" >
+            <img className="buttons button-next" src={ButtonJa} alt="" />
+          </Link>
+          <Link to="/route-0/step-3" >
+            <img className="buttons" id="button-nee-thanks" src={ButtonNee} alt="" />
+          </Link>
         </div>
-        
-        <p>spel uitleg & instagram login</p>
+
       </div>
       );
   }

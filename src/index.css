@@ -2,57 +2,82 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
 }
 
-a {
-  color: white;
-  background: #00B4BE;
-  padding: 4px 8px;
-  text-decoration: none;
-  border-radius: 4px;
-  z-index: 10;
-  margin: 0 4px;
+.container {
+  position: relative;
+  height: 100vh;
+  /*border: 1px solid red;*/
 }
 
-img, video, .container-buttons-video, .container-buttons-image {
-  position: fixed;
-  top: 0;
-  right: 0;
+.background, video {
   height: 100vh;
 }
 
-.container-buttons-video, .container-buttons-image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+/*>>>> buttons styling <<<<*/
+
+.buttons {
+  position: absolute;
 }
+
+.button-next {
+  height: 100vh;
+  width: 100%;
+  top: 0;
+}
+
+.opties {
+  width: 100%;
+}
+
+.bottom {
+  bottom: 0
+}
+
+.top {
+  top: 0
+}
+
+.split {
+  height: 100vh;
+  right: 0;
+  top:0;
+}
+
+
+
+#button-nee-thanks {
+  height: 100px;
+  right: 30px;
+  bottom: 80px;
+}
+
+/*>>>> Animation <<<<*/
 
 .container-buttons-video {
   opacity: 0;
 }
 
-.container-buttons-image {
+.container-buttons-image img {
   animation: fadeIn 2s ease;
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
+    /*transform: scale(0);*/
   }
   100% {
     opacity: 1;
+    /*transform: scale(1);*/
   }
 }
 
-@media screen and (max-width: 650px) {
-  h2, h3, p, .links {
-    display: none;
-  }
-  img, video, .container-buttons-video, .container-buttons-image {
-    width: 100vw;
-  }
-}
+/*>>>> Remove player styling <<<<*/
 
 *::-webkit-media-controls-panel {
   display: none!important;

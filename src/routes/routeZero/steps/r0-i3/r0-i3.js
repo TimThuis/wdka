@@ -1,13 +1,21 @@
 import React, { Component } from 'react';
-import Image from '../../../../images/3.png';
+import { Link } from 'react-router';
+
+import Background from './achtergrond.png';
+import Button from './button.png';
+import Audio from '../../../../components/audio/Audio';
 
 class R0I3 extends Component {
   render() {
     return (
-      <div>
-        <h3>Route 0 image 3</h3>
-        <img src={Image} alt=""/>
-        <p>Level 2</p>
+      <div className="container">
+        <img className="background" src={Background} alt=""/>
+        <div className="container-buttons-image">
+          <Link to="/route-0/step-6" >
+            <img className="buttons button-next" src={Button} alt="" />
+          </Link>
+        </div>
+        <Audio />
       </div>
       );
   }

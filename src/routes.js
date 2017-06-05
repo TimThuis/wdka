@@ -27,6 +27,7 @@ import RBI1 from './routes/routeB/steps/rB-i1/rB-i1.js'
 
 const Routes = (props) => (
   <Router {...props}>
+    <Redirect from="/" to="/route-0/step-1" />
     <Route path="/" component={App} >
       <Route path="/route-0" component={RouteZero}>
         <Route path="/route-0/step-1" component={R0I1} />
@@ -52,7 +53,6 @@ const Routes = (props) => (
         <Route path="/route-b/step-5" component={RBV4} />
       </Route>
     </Route>
-    <Redirect from="/start" to="/route-0/step-1" />
   </Router>
 );
 

@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import VideoLocation from '../../../../videos/1.mp4';
+
+import Video from './video.mp4';
 import StepComp from '../../../../components/stepComp/StepComp';
+import ButtonNext from './button.png';
 
 class RBV1 extends Component {
   render() {
     return (
-      <div>
-        <h3>Route B video 1</h3>
-        <StepComp video={VideoLocation}>
-          <Link to="/route-b/step-2" >next</Link>
+      <div className="container">
+        <StepComp video={Video}>
+          <Link to="/route-b/step-2" >
+            <img className="buttons button-next" src={ButtonNext} alt="" />
+          </Link>
         </StepComp>
-        <p>foto post & route b</p>
       </div>
       );
   }
