@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Video.css';
 import Gif from './loading-gif.gif';
-import AudioLoop from '../audio/loop-audio.wav';
+import AudioLoop from '../audio/loop-audio.mp3';
+import { TweenMax } from "gsap";
 let video;
 let audio;
 
@@ -12,13 +13,17 @@ class Video extends React.Component {
     video = this.refs.video;
     audio = this.refs.audio;
     video.play();
-  // video.playbackRate = 10;
+    audio.volume = 0;
+    audio.play();
   }
 
   videoClose() {
     video.webkitExitFullScreen();
     this.props.startAnimation();
-    audio.play();
+    TweenMax.to(audio, 2, {
+      volume: 1,
+      delay: 1,
+    })
   }
 
   render() {
@@ -36,7 +41,7 @@ class Video extends React.Component {
 
         <audio
       src={AudioLoop}
-      type="audio/wav"
+      type="audio/mp3"
       ref='audio'
       loop
       />
