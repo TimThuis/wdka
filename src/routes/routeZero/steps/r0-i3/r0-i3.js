@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 
-import Background from './achtergrond.png';
+import Background from './achtergrond.jpg';
 import Button from './button.png';
 import Audio from '../../../../components/audio/Audio';
 
@@ -11,7 +11,7 @@ class R0I3 extends Component {
       <div className="container">
         <img className="background" src={Background} alt=""/>
         <div className="container-buttons-image">
-          <Link to="/route-0/step-6" >
+          <Link to="/route-0/end" >
             <img className="buttons animation" style={{
         bottom: "14%",
         margin: "auto",

@@ -10,6 +10,7 @@ import RouteB from './routes/routeB/RouteB.js'
 import R0I1 from './routes/routeZero/steps/r0-i1/r0-i1.js'
 import R0I2 from './routes/routeZero/steps/r0-i2/r0-i2.js'
 import R0I3 from './routes/routeZero/steps/r0-i3/r0-i3.js'
+import R0I4 from './routes/routeZero/steps/r0-i4/r0-i4.js'
 import R0V1 from './routes/routeZero/steps/r0-v1/r0-v1.js'
 
 import RAV1 from './routes/routeA/steps/rA-v1/rA-v1.js'
@@ -31,6 +32,7 @@ const Routes = (props) => (
         <Route path="/route-0/step-2" component={R0I2} />
         <Route path="/route-0/step-3" component={R0V1} />
         <Route path="/route-0/step-5" component={R0I3} />
+        <Route path="/route-0/end" component={R0I4} />
       </Route>
 
       <Route path="/route-a" component={RouteA}>

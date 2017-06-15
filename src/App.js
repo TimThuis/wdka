@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
 
 class App extends Component {
 
@@ -7,7 +6,6 @@ class App extends Component {
     return (
       <div className="App">
         {this.props.children}
-        <Link className="btn-return" to="/"> return </Link>
       </div>
       );
   }

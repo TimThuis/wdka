@@ -3,16 +3,11 @@ import PropTypes from 'prop-types';
 import './StepComp.css';
 import { TweenMax } from "gsap";
 import Video from '../video/Video';
-let element;
 
 class StepComp extends React.Component {
 
-  componentDidMount() {
-    element = this.refs.buttons;
-  }
-
   animation() {
-    TweenMax.to(".buttons", 1, {
+    TweenMax.to(".buttons", 2, {
       opacity: 1,
       transform: 'scale(1)',
     })

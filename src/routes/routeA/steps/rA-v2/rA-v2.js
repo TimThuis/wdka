@@ -12,7 +12,7 @@ class RAV2 extends Component {
         <StepComp video={Video}>
           <Link to="/route-a/step-4" >
               <img className="buttons" style={{
-        top: "20%",
+        top: "17%",
         width: "100%"
       }} src={ButtonNext} alt="" />
           </Link>

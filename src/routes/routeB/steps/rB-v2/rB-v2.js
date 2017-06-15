@@ -13,7 +13,7 @@ class RBV2 extends Component {
           <Link to="/route-b/step-4" >
             <img className="buttons" style={{
         width: "100%",
-        top: "20%",
+        top: "17%",
       }} src={ButtonNext} alt="" />
           </Link>
         </StepComp>

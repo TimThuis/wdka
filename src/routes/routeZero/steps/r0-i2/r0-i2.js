@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 
-import Background from './background.png';
+import Background from './background.jpg';
 import ButtonNee from './button-nee.png';
 import ButtonJa from './button-ja.png';
 
@@ -15,7 +15,7 @@ class R0I2 extends Component {
           <Link to="/route-0/step-3" >
             <img className="buttons animation" style={{
         width: "87%",
-        bottom: "13%",
+        bottom: "11%",
         margin: "auto",
         left: "0",
         right: "0",
@@ -23,9 +23,9 @@ class R0I2 extends Component {
           </Link>
           <Link to="/route-0/step-3" >
             <img className="buttons animation"src={ButtonNee} style={{
-        width: "40%",
-        bottom: "13%",
-        right: "27px",
+        width: "37%",
+        bottom: "9%",
+        right: "5%",
       }}alt="" />
           </Link>
         </div>
