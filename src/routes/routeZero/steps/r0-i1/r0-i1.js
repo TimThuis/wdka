@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 
-import Background from './background.png';
+import Background from './background.jpg';
 import ButtonNext from './button.png';
 
 class R0I1 extends Component {
