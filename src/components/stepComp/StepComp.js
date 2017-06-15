@@ -12,8 +12,9 @@ class StepComp extends React.Component {
   }
 
   animation() {
-    TweenMax.to(element, 2, {
+    TweenMax.to(".buttons", 1, {
       opacity: 1,
+      transform: 'scale(1)',
     })
   }
 

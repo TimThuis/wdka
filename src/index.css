@@ -10,73 +10,42 @@ body {
 
 .container {
   position: relative;
-  height: 100vh;
-  /*border: 1px solid red;*/
-}
-
-.background, video {
-  height: 100vh;
 }
 
 /*>>>> buttons styling <<<<*/
 
+
 .buttons {
   position: absolute;
+  opacity: 0;
+  transform: scale(0.85);
 }
-
-.button-next {
-  height: 100vh;
-  width: 100%;
+.center-v {
+  margin: auto;
   top: 0;
-}
-
-.opties {
+  bottom: 0;
   width: 100%;
-}
-
-.bottom {
-  bottom: 0
-}
-
-.top {
-  top: 0
-}
-
-.split {
-  height: 100vh;
-  right: 0;
-  top:0;
-}
-
-
-
-#button-nee-thanks {
-  height: 100px;
-  right: 30px;
-  bottom: 80px;
 }
 
 /*>>>> Animation <<<<*/
 
-.container-buttons-video {
-  opacity: 0;
-}
-
-.container-buttons-image img {
-  animation: fadeIn 2s ease;
-}
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    /*transform: scale(0);*/
+    transform: scale(0.85);
   }
   100% {
     opacity: 1;
-    /*transform: scale(1);*/
+    transform: scale(1);
   }
 }
 
+.animation {
+  animation: fadeIn 2s ease;
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
 /*>>>> Remove player styling <<<<*/
 
 *::-webkit-media-controls-panel {
@@ -92,4 +61,16 @@ body {
 *::-webkit-media-controls-start-playback-button {
   display: none!important;
   -webkit-appearance: none;
+}
+
+@media screen and (min-width: 960px) {
+  .background, video {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .background, video {
+    width: 100vw;
+  }
 }

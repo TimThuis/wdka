@@ -13,10 +13,19 @@ class R0V1 extends Component {
       <div className="container">
         <StepComp video={Video}>
           <Link to="/route-a/step-1" >
-            <img className="buttons opties top" src={ButtonOptie1} alt="" />
+            <img className="buttons" style={{
+        width: "72%",
+        bottom: "11%",
+        left: "6%",
+      }}
+      src={ButtonOptie1} alt="" />
           </Link>
           <Link to="/route-b/step-1" >
-            <img className="buttons opties bottom" src={ButtonOptie2} alt="" />
+            <img className="buttons" style={{
+        width: "92%",
+        top: "5%",
+        left: "6%",
+      }}src={ButtonOptie2} alt="" />
           </Link>
         </StepComp>
       </div>

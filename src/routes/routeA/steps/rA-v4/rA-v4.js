@@ -11,7 +11,11 @@ class RAV4 extends Component {
       <div className="container">
         <StepComp video={Video}>
           <Link to="/route-0/step-5" >
-            <img className="buttons button-next" src={ButtonNext} alt=""/>
+            <img className="buttons" style={{
+        top: "0%",
+        left: "0%",
+        width: "100%"
+      }} src={ButtonNext} alt=""/>
           </Link>
         </StepComp>
       </div>

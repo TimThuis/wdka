@@ -13,10 +13,20 @@ class R0I2 extends Component {
 
         <div className="container-buttons-image">
           <Link to="/route-0/step-3" >
-            <img className="buttons button-next" src={ButtonJa} alt="" />
+            <img className="buttons animation" style={{
+        width: "87%",
+        bottom: "13%",
+        margin: "auto",
+        left: "0",
+        right: "0",
+      }} src={ButtonJa} alt="" />
           </Link>
           <Link to="/route-0/step-3" >
-            <img className="buttons" id="button-nee-thanks" src={ButtonNee} alt="" />
+            <img className="buttons animation"src={ButtonNee} style={{
+        width: "40%",
+        bottom: "13%",
+        right: "27px",
+      }}alt="" />
           </Link>
         </div>
 

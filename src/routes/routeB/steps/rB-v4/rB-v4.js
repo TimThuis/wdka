@@ -11,7 +11,7 @@ class RBV4 extends Component {
       <div className="container">
         <StepComp video={Video}>
           <Link to="/route-0/step-5" >
-            <img className="buttons button-next" src={ButtonNext} alt=""/>
+            <img className="buttons center-v" src={ButtonNext} alt=""/>
           </Link>
         </StepComp>
       </div>

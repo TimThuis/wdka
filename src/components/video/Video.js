@@ -13,15 +13,16 @@ class Video extends React.Component {
     video = this.refs.video;
     audio = this.refs.audio;
     video.play();
-    audio.volume = 0;
-    audio.play();
+    video.volume = 0;
+    video.playbackRate = 10;
   }
 
   videoClose() {
     video.webkitExitFullScreen();
     this.props.startAnimation();
-    TweenMax.to(audio, 2, {
-      volume: 1,
+    // audio.play();
+    TweenMax.from(audio, 2, {
+      volume: 0,
       delay: 1,
     })
   }

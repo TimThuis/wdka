@@ -13,10 +13,19 @@ class RAI1 extends Component {
           <img src={Background} alt="" className="background"/>
           <div className="container-buttons-image">
             <Link to="/route-a/step-5" >
-              <img className="buttons button-next" src={ButtonJa} alt="" />
+              <img className="buttons animation" style={{
+        top: "35%",
+        height: "8%",
+        left: "23%",
+      }}src={ButtonJa} alt="" />
             </Link>
             <Link to="/route-a/step-5" >
-              <img className="buttons split"src={ButtonNee} alt="" />
+              <img className="buttons animation" style={{
+        top: "35%",
+        height: "8%",
+        right: "23%",
+      }}
+      src={ButtonNee} alt="" />
             </Link>
           </div>
           <Audio />
