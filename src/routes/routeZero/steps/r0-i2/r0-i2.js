@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import Audio from '../../../../components/audio/Audio';
 
 import Background from './background.jpg';
 import ButtonNee from './button-nee.png';
@@ -30,6 +31,7 @@ class R0I2 extends Component {
           </Link>
         </div>
 
+        <Audio />
       </div>
       );
   }

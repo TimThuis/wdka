@@ -3,28 +3,28 @@ import PropTypes from 'prop-types';
 import './Video.css';
 import Gif from './loading-gif.gif';
 import AudioLoop from '../audio/loop-audio.mp3';
-import { TweenMax } from "gsap";
 let video;
 let audio;
 
 class Video extends React.Component {
 
+  constructor() {
+    super();
+    this.videoClose = this.videoClose.bind(this);
+  }
+
   componentDidMount() {
     video = this.refs.video;
     audio = this.refs.audio;
     video.play();
-  // video.volume = 0;
-  // video.playbackRate = 10;
+    audio.play();
+    audio.muted = true
   }
 
   videoClose() {
+    audio.muted = false;
     video.webkitExitFullScreen();
     this.props.startAnimation();
-    // audio.play();
-    TweenMax.from(audio, 2, {
-      volume: 0,
-      delay: 1,
-    })
   }
 
   render() {

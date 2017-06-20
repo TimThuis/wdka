@@ -7,7 +7,7 @@ import Video from '../video/Video';
 class StepComp extends React.Component {
 
   animation() {
-    TweenMax.to(".buttons", 2, {
+    TweenMax.to(".buttons", 3, {
       opacity: 1,
       transform: 'scale(1)',
     })
